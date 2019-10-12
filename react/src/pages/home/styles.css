@@ -1,0 +1,34 @@
+#hederComponetes {
+    width: 100%;
+    margin: 0 auto;
+    height: 72px;
+    padding: 0 30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b8b8b8;
+}
+
+.button {
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+    background: #b8b8b8;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0, 5;
+}
+
+#logoimg{ 
+    display: flex;
+    justify-content: center;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    background: #fff8f8;
+}
