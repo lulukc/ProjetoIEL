@@ -1,0 +1,37 @@
+{
+  "name": "projetoIEL",
+  "version": "1.0.0",
+  "description": "sistema automatisado para gerencia de dados das apresentaçoes",
+  "main": "index.js",
+  "author": "Lucas Amancio",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "dev2": "node src/app/video/index.js"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "algorithmia": "^0.3.10",
+    "assert": "^2.0.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "googleapis": "^43.0.0",
+    "ibm-watson": "^4.5.1",
+    "image-downloader": "^3.5.0",
+    "jwt-simple": "^0.2.0",
+    "lodash": "^4.17.15",
+    "mariadb": "^2.1.0",
+    "moment": "^2.9.0",
+    "multer": "^1.4.1",
+    "mysql2": "^1.6.5",
+    "node-webvtt": "^1.6.1",
+    "sequelize": "^5.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "sequelize-cli": "^5.5.0"
+  }
+}
