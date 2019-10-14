@@ -20,10 +20,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      immersionPeriod: {
-        type: Sequelize.STRING,
-        allowNull: false
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
@@ -35,6 +31,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Immersions');
+    return queryInterface.dropTable('Immersions')
   }
-};
+}

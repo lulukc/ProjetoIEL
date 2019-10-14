@@ -4,7 +4,6 @@ module.exports = (sequelize, DataTypes) => {
     immersionName: DataTypes.STRING,
     immersionPlace: DataTypes.STRING,
     immersionCompany: DataTypes.STRING,
-    immersionPeriod: DataTypes.STRING
   }, {});
   Immersion.associate = function (models) {
     Immersion.hasMany(models.Users, { as: 'Immersion' })

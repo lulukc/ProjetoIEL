@@ -1,47 +1,32 @@
 import React, { Component } from "react"
-import { Player, ControlBar, ClosedCaptionButton } from 'video-react'
-
 import './video-react.css'
 
-
-
-class VideoPlayer extends Component {
-
+class Video extends Component {
     state = {
-        videos: ''
+        video: ""
     }
-    async componentDidMount() {
+    componentDidMount() {
         const { filesName } = this.props.match.params
-        this.setState.videos = filesName
+        
+        this.setState({ video: filesName })
+        console.log(filesName)
+        console.log(this.state.video)
     }
 
     render() {
-        const { videos } = this.state
-
         return (
             <div>
-                {/* <Player videoId="video-1" >
-                    <source
-                        src={`http://localhost:3003/files/${videos}`}
-                        type="video/avi"
-                    />
-                    <track
-                        kind="captions"
-                        src="http://localhost:3003/transcriptions/teste3.pt.vtt"
-                        srcLang="br"
-                        label="Portugues"
-                        default
-                    />
-                    <ControlBar autoHide={true}>
-                        <ClosedCaptionButton order={7} />
-                    </ControlBar>
-                </Player> */}
-<h1> {videos} </h1>
+                <video id="meuvideo" width="800px" height="450px" autoplay controls>
+                    <source src={`http://localhost:3003/files/${this.state.video}`}
+                        type="video/mp4" />
+                    <track src="teste2.pt.vtt" label="Portugues" kind="captions" srclang="pt-br" default />
+                </video>
+                <p>{this.state.video}</p>
             </div>
         )
+
     }
 
 }
 
-
-export default VideoPlayer
+export default Video

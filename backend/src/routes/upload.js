@@ -13,16 +13,15 @@ routes.post('/upload', upload.single('video'), async (req, res, ) => {
     const { immersionId } = req.body
     const { filename: filesName } = req.file
 
-    const transcription = filesName.replace('.mp4', '.txt')
+    const transcription = filesName.replace('.mp4', '.pt.vtt')
 
     await Videos.create({
         filesName,
         transcription,
         immersionId
     })
-        .them(res => res.json(res))
-        .catch(error => res.json(error))
 
-    await robots(filesName)
+    return res.json(videos), robots(filesName)
+
 })
 module.exports = routes

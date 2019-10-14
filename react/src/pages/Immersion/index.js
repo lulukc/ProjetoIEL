@@ -4,7 +4,7 @@ import api from '../../service/api'
 class Immersion extends Component {
     state = {
         immersionName: '',
-        immersionCountry: '',
+        immersionPlace: '',
         immersionCompany: '',
     }
     handleSubmit = async e => {
@@ -12,7 +12,7 @@ class Immersion extends Component {
 
         const data = {
             immersionName: this.state.immersionName,
-            immersionCountry: this.state.immersionCountry,
+            immersionPlace: this.state.immersionPlace,
             immersionCompany: this.state.immersionCompany,
         }
 
@@ -35,10 +35,10 @@ class Immersion extends Component {
                 />
                 <input
                     type='text'
-                    name='immersionCountry'
+                    name='immersionPlace'
                     placeholder='Cidade da imersão'
                     onChange={this.handleChange}
-                    value={this.state.immersionCountry}
+                    value={this.state.immersionPlace}
                 />
                 <input
                     type='text'

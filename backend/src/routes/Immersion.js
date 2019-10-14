@@ -5,17 +5,17 @@ const robots = require('../app/Information')
 const routes = new express.Router()
 
 routes.post('/immersion', async (req, res) => {
+    let state = {}
+    const { immersionName, immersionPlace, immersionCompany } = req.body
 
-    const { immersionName, immersionPlace, immersionCompany, immersionPeriod } = req.body
 
     await Immersion.create({
         immersionName,
         immersionPlace,
         immersionCompany,
-        immersionPeriod
     })
-        .then(function (immersion) {
-            this.state = immersion.dataValues
+        .then(immersion => {
+            state = immersion.dataValues
             return res.json(immersion)
         })
         .catch(error => res.json(error))

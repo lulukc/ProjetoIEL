@@ -60,4 +60,3 @@ module.exports = robots = (filenameAudio) => {
         .catch(err => console.log(err))
 
 }
-robots('audio.flac')
