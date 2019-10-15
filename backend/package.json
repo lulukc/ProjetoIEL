@@ -6,7 +6,7 @@
   "author": "Lucas Amancio",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "start": "nodemon src/index.js",
     "dev2": "node src/app/video/index.js"
   },
   "dependencies": {
