@@ -103,6 +103,7 @@ typings/
 /outros
 /.pnp
 .pnp.js
+/build
 
 # testing
 /coverage
