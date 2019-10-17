@@ -1,0 +1,45 @@
+#botao2  {
+color: #363336;
+cursor: pointer;
+}
+#botao3{
+  position: absolute;
+  top: 1%;
+  left: 100%;
+cursor: pointer;
+}
+
+#upload1{
+  width: 380px;
+  height: 340px;
+  background-color: #dcdcdc;
+  position: absolute;
+  border-radius: 0px 5px 5px 5px;
+	top: 0%;
+	left: 0%;
+}
+#tudo1{
+  background-color: #f2f5f7;
+  width: 395px;
+  height: 355px;
+  margin: 140px auto 0px;
+  border-radius: 5px;
+  position: absolute;
+	top: 5%;
+	left: 40%;
+}
+#idimercao{
+  position: absolute;
+  top: 65%;
+  left: 5%;
+}
+#escarquivo{
+	position: absolute;
+	top: 50%;
+	left: 5%;
+}
+#logoimg1{
+	position: absolute;
+	top: 5%;
+	left:23%;
+}

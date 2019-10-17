@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import api from '../../service/api'
-
+import './styles.css'
+import logo from '../login/logoIris.png'
 class Immersion extends Component {
     state = {
         immersionName: '',
@@ -25,7 +26,14 @@ class Immersion extends Component {
 
     render() {
         return (
+          <div id='tudo3'>
+          <div id='login-box3'>
+           <div id='nomeimersao1'>
+           <div id='logoimg3'>
+               <img src={logo} alt='logo' />
+           </div>
             <form id='immersion' onSubmit={this.handleSubmit} >
+           <div class="input-div3" id='nomeimersao2'>
                 <input
                     type='text'
                     name='immersionName'
@@ -33,6 +41,8 @@ class Immersion extends Component {
                     onChange={this.handleChange}
                     value={this.state.immersionName}
                 />
+                </div>
+                <div class="input-div3" id='input-immersionPlace'>
                 <input
                     type='text'
                     name='immersionPlace'
@@ -40,6 +50,8 @@ class Immersion extends Component {
                     onChange={this.handleChange}
                     value={this.state.immersionPlace}
                 />
+                </div>
+                <div class="input-div3" id='input-immersionCompany'>
                 <input
                     type='text'
                     name='immersionCompany'
@@ -47,8 +59,14 @@ class Immersion extends Component {
                     onChange={this.handleChange}
                     value={this.state.immersionCompany}
                 />
-                <button type='submit'>registrar</button>
+                </div>
+                <div id='botaofora23'>
+                <button id='botao23'type='submit'>registrar</button>
+                </div>
             </form>
+            </div>
+            </div>
+            </div>
         )
     }
 }

@@ -2,6 +2,11 @@ import React, { Component } from "react"
 
 import api from '../../service/api'
 
+import './styles.css'
+
+import logo from '../login/logoIris.png'
+
+
 class upload extends Component {
     state = {
         video: null,
@@ -31,17 +36,28 @@ class upload extends Component {
 
     render() {
         return (
+          <div id='tudo1'>
+            <div id='upload1'>
+            <div id='logoimg1'>
+                <img src={logo} alt='logo' />
+            </div>
+            <div id='escarquivo'>
             <form id='upload' onSubmit={this.handleSubmit}>
                 <input type='file' onChange={this.handleVideoChange} />
+              </form></div>
+                  <div id='idimercao'>
+                <div>
                 <input
                     type='number'
                     name='immersionId'
-                    placeholder='Id da imesção'
+                    placeholder='Id da imerção'
                     onChange={this.handleChange}
                     value={this.state.immersionId}
-                />
-                <button type='submit' >enviar</button>
-            </form>
+                /> </div><div id='botao3'>
+                <button id='botao2' type='submit' >enviar</button>
+             </div></div></div>
+
+         </div>
         )
     }
 }

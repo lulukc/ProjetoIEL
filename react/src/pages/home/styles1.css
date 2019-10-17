@@ -1,61 +1,9 @@
-#tudo3{
-  background-color: #f2f5f7;
-  width: 395px;
-  height: 385px;
-  margin: 140px auto 0px;
-  border-radius: 5px;
-  position: absolute;
-  top:5%;
-  left:40%;
-}
-#login-box3{
-  width: 380px;
-  height: 370px;
-  background-color: #dcdcdc;
-  position: absolute;
-  border-radius: 0px 5px 5px 5px;
 
-}
-#nomeimersao1{
-position: absolute;
-left: 2%;
-top: 35%;
-}
-.input-div3{
-  margin:20px;
-  padding: 5px;
-  background-color: #f2f5f7;
-  border-radius: 3px;
-}
-.input-div3 input{
-  width: 310px;
-  height: 35px;
-  padding-left: 5px;
-  font: normal 13px sans-serif;
-  color: #aeaeae;
-  border-radius: 3px;
-  border: 1px solid #bfc4c6;
-  outline:none;
-}
-.input-div3-hover{
-  background-color: #e0f1fc
-}
-.input-div-hover input{
-  border-color: #7dc6dd;
-}
-#nomeimersao2{
-    margin-top: -10px;
-}
-#botaofora23{
-  width: 42%;
-  margin-left: 15%;
-  position: absolute;
-  left: 4%;
-}
-#botao23{
+#botaofora1{
+  width: 120%;
   float:right;
   background-color: red;
-  padding: 5px 15px;
+  padding: 10px 35px;
   font: bold 12px sans-serif;
   border-radius: 20px;
   text-shadow:0px 1px 0px white;
@@ -70,7 +18,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf6f9', end
   color: #527988;
   box-shadow: 0px 0px 10px #c9c9c9
 }
-#botao23:hover{
+#botaofora1:hover{
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cde5ee+0,2989d8+0,cde5ee+1,edf6f9+99 */
 background: #cde5ee; /* Old browsers */
 background: -moz-linear-gradient(top,  #cde5ee 0%, #2989d8 0%, #cde5ee 1%, #edf6f9 99%); /* FF3.6-15 */
@@ -79,12 +27,25 @@ background: linear-gradient(to bottom,  #cde5ee 0%,#2989d8 0%,#cde5ee 1%,#edf6f9
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cde5ee', endColorstr='#edf6f9',GradientType=0 ); /* IE6-9 */
 
     cursor: pointer;
-
+      top: -30%;
 }
-#logoimg3{
+#cafezinho{
   position: absolute;
-   left: 26%;
-   top: -58%;
-      height:auto;
-      width: auto;
+  top: 3%;
+  left: 90%;
+}
+#logotj{
+  background-color: #cde5ee
+}
+#txt{
+  position: absolute;
+  top: 22%;
+  left: 35%;
+  font: normal 13px sans-serif;
+  color: black;
+  font-size: 19px;
+}
+#logoimg10{
+  position: absolute;
+  left: 45%
 }
