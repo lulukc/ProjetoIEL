@@ -21,7 +21,7 @@
     "googleapis": "^43.0.0",
     "ibm-watson": "^4.5.1",
     "image-downloader": "^3.5.0",
-    "jwt-simple": "^0.2.0",
+    "jwt-simple": "^0.5.3",
     "lodash": "^4.17.15",
     "mariadb": "^2.1.0",
     "moment": "^2.9.0",
